@@ -1,0 +1,21 @@
+FOR ALL TASKS:
+
+INPT==>Input
+OTPT==>Output
+____________________
+
+______________________________________________________________________________________________________________________________________________________________________________________________
+Task1
+First took the input and created a graph from the given input.Also the input has a starting vertex at the end so stored that in the start variable.Then made a function named diastra that will run my algorithm. to make the algo work imported heapq and math library. So passed the graph and the starting node in my distra function.At first that function will take a distance list that stores all the distances by default it is set to hight at infinity.and my mean heap stores the nodes and the weights that we need for traversal.For this task used a set to keep the code simple for the visited nodes. Lasty wrote the while loop that works on my priority queue and compares the path weight value and distance and discovers the sub elements of that node and lastly if some nodes are unreachable we replace the distance list with -1 for those nodes and return the list from index 1 to last as 1 based indexing is required.
+
+______________________________________________________________________________________________________________________________________________________________________________________________
+Task2
+Same code as task 1 just for this task in my function i am returning the raw list (not from index 1) because of full traversal. In this code called the diastra function two times that returned the two distance lists. Now took a time and place variable and set them to maximum to inifinity as we will take the lowest value. Then wrote a loop and in the loop for every index it will return the maximum time comaparing the two lists.if the time is less than our initial time then it will replace the value and for that index it will consider that vertex as the common node.And lastly if it is still infinity it will print impossible otherwise it will print the time and Node accordingly.
+
+______________________________________________________________________________________________________________________________________________________________________________________________
+Task3
+As any oher task took the input and made a links named list that will store the friendship values as tuples. Then created the parent list that keeps track of all the parents of the vertices. The counter function returns the count value using a parent list. The parent changer function changes the parent of a node after they merge together upon calling.Theh union function takes the link data and the parents list.For each tuple in the links list if the parents are same the count in the parents list is stored in the final_list. If the parents are different then parent changer is called and the data is updated in parents list and like this for every change the data is calculated and stored in the final_list.Finally the final_list is itterated and printed in the output that we are looking for.
+______________________________________________________________________________________________________________________________________________________________________________________________
+Task4
+Same as any other 221 code took the input and made the graph and stored it in the paths list as tuple(starting,ending,weight).Wrote a parent finder function that can find the parent of a vertex recursively itterating the parent list that we made initially.This will be usefull to avoid loops later. Then wrote the kruskal algo and named that function as beluga_roads that takes the paths list and the total number of edges.As per the algo firstly sorted the paths using sort function.then took a initial cost counter set to 0. Then for the paths list or roads that beluga must drive itterated over hem and for every u, v calle the parent finder function. If the boths parent are same means that they have a loop and we skip these vertexes. If there are no loops we update the u vertexes parent from the vertex we are traveling from to avoid loops and updating our cost counter with the paths weight that will give the MST and lasty the cost is being returned and printed in the output.
+

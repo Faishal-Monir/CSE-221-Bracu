@@ -1,0 +1,23 @@
+20 21
+a^b
+a^c
+b^d
+b^e
+c^f
+c^g
+d^h
+d^n
+d^i
+e^o
+e^j
+c^p
+f^k
+g^l
+g^m
+k^p
+k^q
+l^r
+m^s
+q^t
+r^t
+a

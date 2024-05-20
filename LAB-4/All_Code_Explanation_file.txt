@@ -1,0 +1,33 @@
+FOR ALL TASKS:
+
+INPT==>Input
+OTPT==>Output
+____________________
+Task-1(A)
+
+Here for the majority of the tasks took v amount of vertexes and e amount of edges from the input.Then took a empty matrix where the all the values are initially 0.The lenght of the matrix is node+1 as indexing starts from 0 in python.Then wrote a loop where it itterates over every edges and assigns the weight values to the corresponding v1(vertex1) v2(vertex2)-Indexs in the matrix. Lasty it is printed in the output file.
+____________________________________________________________________________________________________________________________________________________________________________________________
+Task-1(B)
+
+Same as previous task I took V,E amount of vertexes and edges from the input file.For the Ad.list took a empty dictionary and using a loop updated the vertexes as keys of the empty dictionary. Now again used another loop to update the vales of the parent and destination by traversing using edges and updating the corresponding values in the designated keys as tuple in the dictionary. Lastly took another loop using key value pairs in dictionary and using a nested loop printed them in the output file.
+____________________________________________________________________________________________________________________________________________________________________________________________
+Task-2
+
+Took the input of vertexes and edges v,e. Then created a empty matrix(mtrix) and a list(final_list) where the final values will be stored.Then wrote a loop traversing the edges and assigned the vertex datas to the given v1,v2 and v2v1 indexes as it is undirected graph. Then wrote the bfs algorithm From the given Pseudo code given in the assignment pdf file.Here in the Bfs algorithm uses a queue and to keep track of the visited nodes also used a Visited list where individual flags can be updated.Then wrote a while loop that works until the queue is empty and for each element the loop traverses the sub elements of that Vertex or in graph we call them the paths.After visiting a vertex it marks them visited(true) in the visited list.And ultimately it finishesh when all the paths are discovered and path finding starts from vertex 1.
+____________________________________________________________________________________________________________________________________________________________________________________________
+Task-3
+
+Same as before took the amount of vertexes and edges and made a empty matrix(nested list in python) and a final list to store all the values.Then wrote a loop to store the vertexes data using the loop as it is a undirected,unweighted and a bi-directional graph. In my code this time the Visited list is made global for easier access.Then I wrote the dfs algorithm where it starts searching from the vertex 1. The algo first updates the visited state in the visited state and goes to that node and finds the outbound nodes and using the second loop it recursively does the same task for the remaining vertexes resulting in a discovery of all the vertexes in that graph.And for each itteration if it is not visited it will be appended in the final list of paths and the output is shown at the end.
+____________________________________________________________________________________________________________________________________________________________________________________________
+Task-4
+
+Same as other tasks took all the input and a empty graph(matrix/Adj.list). But for this task it is a directed graph so in the first loop for every edges just assigned the V1,v2 indexs in the matrix. To find a cycle uses the dfs approach where same as before it keeps track using a visited list of all the discovered lists but for this problem used a second stack or list that keeps track of current vertex if it is visited at current time then it becomes True and if there is no cycle present it becomes negative in the dfs code. If in a vertex the outbound elements cycles and gets back to that vertex than it can be easily detected by using the visited or the stack and this operation is done recursively for all the outbound paths of each vertexes. Latly the cycle function returnes true/false itterating over all the vertexes in the matrix and Yes/No is printed upon that logic.
+____________________________________________________________________________________________________________________________________________________________________________________________
+Task-5
+
+In this tasks took the values as before but for this case addition is that the target node is taken from the input as d. Same made a empty matrix(Ad.list) and using a loop assigned value as it is a undirected unweighted bidirectional graph. In this code used a queue based approach where the que has a initial value of 1 from where the search will start. Visit history list will store the visited elements. Then in the algorithm bfs approach is taken where the algo stores all the elements in the queue and explores all the nodes one by one.If a particular node matches to the destination the code returnes the path_his list that stores the shortest path to the destination as a list and it printed in the output. And the steps is calculated by len of (path_his)-1
+
+____________________________________________________________________________________________________________________________________________________________________________________________
+Task-6
+
+In this task first took the number of row and columns as r,c. and made a empty map and using a loop assigned the values in that corresponding index traversing every row and column. And this resulted in the final map that we will use. Then wrote the algorithm that will find att the diamonds traversing the map recursively. The algo first will check for corner cases if found will return 0 . If the index that is being looked is a Diamond then it will set the Counter(temp_count)=1 else 0 and will mark that index or the graph position as (#) that indicates that the index has been visited. Then finally the algo will search for any paths up,down,left or right if that can be discovered by traversing recursilvely. Finally it will return the temp_count. The final loop will ittarate the map and calls the algo passing the index of the map and it will compare the current count value and the latest count value that it will receive. The loop will store the max number of counts or diamonds in the counter and lastly will print the number in the output file.

@@ -1,0 +1,22 @@
+FOR ALL TASKS:
+
+INPT==>Input
+OTPT==>Output
+____________________
+
+______________________________________________________________________________________________________________________________________________________________________________________________
+Task1(A)
+
+First we take input and construct a directed graph then write two functions one named toposort that will send data to the dfs function for sorting.In toposort created two lists to use as a flag and traversed every element of the graph and send it to the dfs function the function will mark the node as visited and it will then mark the current node as starting node and make it visited in the c_n list and if any loops exist it will help to identify that and the dfs code will return True or false Depending on that. If there aren't any cycle the dfs cycle will append those in the 0-->th index every time creating the  topo sort list in the stack named list. If there is a cycle It will return True else false and depending on that it will print the output.
+______________________________________________________________________________________________________________________________________________________________________________________________
+Task1(B)
+
+Same as any other codes took the input and constructed the directed graph.For this code I used Khans algo. Wrote the function named topo sort that will run topological sort.Firstly in the algo I took a degree counter as a list and wrote a loop to calculate all the vertices indegree. Then made a que and if the verticess have a degree of 0 then appended them in that queue.Then wrote a while loop where it pops the first element of the queue and the sub elements of that vertices. So we know that if there is no cycle in the graph, nodes will be visited once.So i took a counter in the loop and it is returned from the function calculating all the visited nodes. If the counter is greater than the vertices than there is a loop.  If not than it prints the topological sort.
+______________________________________________________________________________________________________________________________________________________________________________________________
+Task2
+
+For this task I used the same code as my khans algorithm just this time i used heap data structure in the while loop, the heap makes the queue a priority que that will pop the lowest element in the queue and this will give us the lexicographically sequence as in th equestion of the lab.
+______________________________________________________________________________________________________________________________________________________________________________________________
+Task3
+
+Took the input and made a directed graph. For this task i iused Kosaraju Algorithm. And made a function names scc_calc that will calculate the scc . In the function firstly i made a visited liast and for each vertex i passed these values to my first Dfs function that will store the updated values in my stack list. Then i transposed the graph in my scc function.Then i again took a reseted visited list and to match the output I sorted my stack so the minimum values can pop everytime.Finally wrote a while loop on my stack and for each node it will search my transposed graph in the second dfs. And for each element the dfs will store the scc to the final lists last element (list[-1]). Then after dfs we sort the list in the final list. And this final list is the strongly connected components of my given graph that i traversed and printed in the output.

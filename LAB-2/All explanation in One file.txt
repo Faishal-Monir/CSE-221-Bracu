@@ -1,0 +1,77 @@
+Task--1(1): 
+
+Took the numbers from input and took two separate lists for each category. Assigned the range at line-7 and the sum at line-8.
+took a empty list named idx=[] that will store the final indexes. Implemented a nested loop and if the i and j index is 
+same it will avoid those indexes. Then if the sum of (i) and (j) are equal to the sum it will append it to the list idx adding
+1 to it as the output is (1) based indexed. Lastly if the idx list is empty then it is impossible otherwise we write the indexes 
+to the output file.
+==============================================================================================================================================
+Task--1(2): 
+
+Took the numbers from input and took two separate lists for each category. Assigned the range at line-7 and the sum at line-8.
+took a empty list named idx=[] that will store the final indexes. then took two pointers i1, i2. i1 starts itterating from the
+front index and i2 from the back index. There is a simple logic in the while loop if the sum of the pointer i1+i2 is less than
+the given sum then i1 will increase. And if the sum is bigger then i2 will decrease. and if i2>i1 it will break returning the idx
+list empty. Same as perviously if the idx list is empty it means impossible otherwise we write the indexes to the output file as 
+(1) based indexes.     \\ here there is only while loop menas we did the task in O(n) time complexity.  \\ 
+==============================================================================================================================================
+Task--2(1): 
+First took the values from the input file as range1, list1, range2, list2. Then added range(1+2) and got the final range of the list.
+then merged the two list as one and named it lst-->(the final list). Then we sorted it using .Sort() method.Finally wrote the output
+in the output file.
+
+// Here the sort works as a merge sort and we have done the task in O(nlogn) time complexity. //
+===============================================================================================================================================
+Task--2(2): 
+
+First took the values from the input file as range1, list1, range2, list2. Then added range(1+2) and got the final range of the list.
+took a empty list named sorted_lst that will store my final sorted list. took two pointers i1, i2. 
+i1 and i2 starts iterating the two lists from the front in the while loop. 
+
+____________________________________________________________________________________________________________
+-----> case1: (The lists are in same lenght)
+
+it will compare the pointer indexes and the lowest value will be added to the final list. Code line (15-21)
+
+-----> case2:(If one of the lists is bigger or smaller)
+
+if i1 or i2 is same as the range of the given list that means that the list is empty now. So the oter pointer can append all the 
+values of the remaining list to the final list code line(22-31) and the loop can stop as there are no more values left.
+____________________________________________________________________________________________________________
+Finally wrote the output in the output file. 
+
+====================================================================================================================================================
+Task--3:
+Took the range of numbers at line 3. Then created an empty list to store the time slots. Then wrote a loop and appended all the time
+slots in that list (line 9).
+Then wrote a selection sort to sort the (end times) in ascending order and sorted out time_slot list(Line 21).Then  took a list named final time
+as it will store the final time slots. ANd a counter and a end time variable for each slot. 
+
+Then wrote a loop to itterate the slots and if th efinal time is empty it will take the first time slot and update the counter and 
+endtime dynamically. And in the elif branch if the start time of a new task is equal or greater than the previous end time then that 
+task can be done by the person and it will append that task in the final list and finally wrote the output files as Counter first
+and the time slots.
+
+For input (1) both_slots 6--8 and 7--9 are valid but per question any of them are right but from logic time slot[1 to 8] the lesser 
+time consuming tasks should be done so thats why took 6-8 and if there were any tasks next as 8-9 it would be done next(as we need to
+complete as much as tasks possible)
+======================================================================================================================================================
+Task--4: 
+
+Took the range and the person info from line 1 of the input file. Made a list of all the time slots as before tasks. Now for the 
+twist wrote a function sort_koro that sorts the time slots either regarding start time if val==0 otherwise val===1 for end time
+based sorting to make the code dynamic.Now to check the corner case if a maximum end tiem has come or not, for that we already took
+the first end time to be the max end time and if there is a max end time after the first slot then it will be stored in the max
+variable if not then the first end time is the maximum working time.But for the algo to work we cannot take the max time first 
+so we reversed the time slots and check for each condition to avoid the corner case. Now in the code we sort (N) numbers of end
+time and node times in the fnal lists. Then Initially we store N number of times and their end times in the lists . Now lastly from 
+line 70 to 92  we cxheck for each person and update the minimum gap person with that work so that n people can do maximum number of 
+tasks in that given time. lastly we took a nested loop and counted the all time slots and printed them in the output file.
+ 
+ For better understanding please check the comments and the sections that I made in the code. 
+==========================================================================================================================================================
+
+
+Note: In every code the same explanation is also given for better understandability. Thank you ! 
+
+

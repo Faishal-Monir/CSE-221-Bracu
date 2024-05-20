@@ -1,4 +1,4 @@
-<b><h1>Algos: Algorithms </h1></b>
+<b><h1>Algos: Algorithms! </h1></b>
 <i><h4>Algorithms making life easier!</h4></i><hr><br>
 <b>
 ```

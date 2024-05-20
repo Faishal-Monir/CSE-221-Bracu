@@ -1,0 +1,47 @@
+Task--1a: 
+For this code we have opened the input file then took the range of the loop from line 1 by using readline( ). 
+Then we ran the loop that amount of times and took the values every time also checked whether the number is even or odd.
+lastly we wrote the output in the output file. and closed the file by using .close( ) at the very end.
+_____________________________________________________________________________________________________________________________________________
+
+Task--1b:
+For this code we read the firt input file and took the range of loop from the first line ('15').Then type converted the value
+to an integear and used that number (15) in the loop range. For each loop we used .split( ) to split the remaining lines by space and get 
+a list and use indexing to check the operator signs and do the calculations by that given instruction. Lastly after each calculations we
+wrote the output in the certain format in the output file and at the very last closed the file. 
+_____________________________________________________________________________________________________________________________________________
+
+Task--2:
+Same as before we opened the input file and took the range (5). Then took the numbers in a list by using  .split( ) and a loop.
+For the bubble sort function we passed the list and there used a flag(sorted_status) to check if the list is sorted or not.
+
+If the list is not sorted it will go into (if-1) then the status will become False and the complexity will be θ(n^2)
+
+But if the list is sorted it will enter the second if bracnch (if-2) then the loop will break and there is no second loop Hence we will get 
+the complexity θ(n).
+_____________________________________________________________________________________________________________________________________________
+
+Task--3:
+For this code we firt took the range. then we took the ids and the marks in two separate lists.Then we formed a list of tuple for every 
+id and the corresponding value for easier calculation. Then made a dictionary making the Numbers as Key and the id values as there are multiple id 
+that got the same marks. Then we made a list of key value pairs using dic.items( ) and sorted that lists keys in descending order by using Selection sort.
+
+Again sorted the values or the ids of that list in Ascending order by using selection sort. So finally for (input-1) the list became this 
+[(50, [4, 9]), (40, [7]), (20, [3]), (10, [1, 2, 5])]. Latly we type formated the list and wrote the designated output in the output file._____________________________________________________________________________________________________________________________________________
+
+Task--4:
+Finally for the last code we took the range and ran a loop and created a unsorted nested list of the trains [["Name","Destination",Time]]
+['ABCD', 'Mymensingh', '00:30']. We could use a tuple but later we can not update it or reassign indexes in a tuple So used a list.
+
+Then in (sort-1) using the basic selection sort we are sorting the names only in the nested list and python is doing it by default using the Unicode values and the 
+conditions of the sorting algo. Now we create a dictionary for every names of the train where the name is the key and the destination and the time is stored in a list as values.
+example:{'ABC': [('Dhaka', '17:30'), ('Barisal', '03:00'), ('Khulna', '03:00')]}
+
+Now we sort the time in the dictionary values as we already assigned thenm in [(Destination,Time),(Destination,Time)]. Again using selction sort (Sort-2) we sorted the time in decending order.
+And if the time is same for then we do nothing by using pass statement. 
+
+Finally we have our sorted dictionary and then by using .items( ) we print the data in given format in the output file and close the opened files._____________________________________________________________________________________________________________________________________________
+
+Note: In every code the same explanation is also given for better understandability. Thank you ! 
+
+
